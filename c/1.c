@@ -6,20 +6,22 @@
 #include <stdio.h>
 
 int main() {
-    int num, reversed;
+    int num, re = 0; 
 
-   
     scanf("%d", &num);
-
-    while(num!=0)
-    {
-        reversed = reversed*10;
-        reversed = reversed = num%10;
+    
+    int len= 3;
+    while(num != 0) {
+        int ten = 1;
+        for(int i = 0; i < len-1 ; i++){
+            ten *= 10;
+        }
+        re += ten * (num % 10);
         num /= 10;
+        len--;
     }
 
-    printf("%d",reversed);
-
+    printf("%d", re);
 
     return 0;
 }

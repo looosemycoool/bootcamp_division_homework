@@ -6,7 +6,18 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int n, sum = 0, factorial = 1;
+
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+        sum += i; 
+        factorial *= i; 
+    }
+
+    printf("%d\n", sum);
+    printf("%d", factorial);
+       
 
     return 0;
 }

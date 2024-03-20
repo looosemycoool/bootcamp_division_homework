@@ -6,7 +6,19 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int age, height;
+
+    scanf("%d",&age);
+    scanf("%d",&height);
+
+    if(age>=14 || height>=160){
+        printf("X");
+    }
+
+    else
+    {
+        printf("O");
+    }
 
     return 0;
 }
