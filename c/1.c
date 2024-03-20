@@ -6,7 +6,20 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int num, reversed;
+
+   
+    scanf("%d", &num);
+
+    while(num!=0)
+    {
+        reversed = reversed*10;
+        reversed = reversed = num%10;
+        num /= 10;
+    }
+
+    printf("%d",reversed);
+
 
     return 0;
 }
