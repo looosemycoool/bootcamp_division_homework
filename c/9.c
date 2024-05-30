@@ -6,21 +6,22 @@
 #include <stdio.h>
 
 int main() {
-   int n, sum;
 
-    while (1) { 
+    int n, sum;
+
+    while(1) {
         scanf("%d", &n);
 
-        if (n > 0) {
-            sum = 0; 
-            for (int i = 1; i <= n; i++) {
-                sum += i; 
+        if(n > 0) {
+            sum = 0;
+            for(int i = 1; i <= n; i++) {
+                sum += i;
             }
-            printf("%d\n", sum); 
-            break; 
+            printf("%d\n", sum);
+            break;
         } else {
-            printf("X\n"); 
+            printf("X\n");
         }
     }
-    return 0;
+  
 }
