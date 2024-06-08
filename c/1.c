@@ -8,17 +8,14 @@
 int main() {
    int num, reversedNum = 0;
 
-    
-    printf("입력\n");
     scanf("%d", &num);
 
-    
     while (num != 0) {
         reversedNum = reversedNum * 10;       
         reversedNum = reversedNum + num % 10; 
         num = num / 10;                      
     }
-    printf("출력\n%d", reversedNum);
+    printf("%d", reversedNum);
 
 
     return 0;

@@ -21,10 +21,6 @@ int main() {
 
     printf("%d\n", sum);
     printf("%d", factorial);
-    for (int i = 2; i <= n; i++) {
-        printf(" * %d", i);
-    }
-    printf(")\n");
 
     return 0;
 }

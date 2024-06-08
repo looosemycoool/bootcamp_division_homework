@@ -8,9 +8,7 @@
 int main() {
    int hour;
 
-    printf("시간을 입력해주세요 (0-23): ");
     scanf("%d", &hour);
-
     if (hour < 12) {
         printf("AM\n");
     } else {
