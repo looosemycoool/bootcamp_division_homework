@@ -8,34 +8,26 @@
 int main() {
    int year, month;
 
-    
-    scanf("%d", &year);
-    scanf("%d", &month);
+    scanf("%d %d", &year, &month);
 
-    
-    int isLeapYear = 0; 
-    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-        isLeapYear = 1; 
-    }
+    int isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 
     switch (month) {
         case 2: 
             if (isLeapYear) {
-                printf("29");
+                printf("29\n");
             } else {
-                printf("28");
+                printf("28\n");
             }
             break;
-        case 4:
+        case 4: 
         case 6:
         case 9:
-        case 11:
-            printf("30"); 
+        case 11: 
+            printf("30\n");
             break;
-        default:
-            printf("31"); 
-            break;
+        default: 
+            printf("31\n");
     }
-
     return 0;
 }

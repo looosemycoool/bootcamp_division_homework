@@ -7,18 +7,15 @@
 
 int main() {
     
-    int a=0;
+    int age;
 
-    scanf("%d", &a);
+    printf("나이를 입력하세요: ");
+    scanf("%d", &age);
 
-    if(a>=61){
+    if (age >= 61) {
         printf("DISCOUNT\n");
-        printf("BOARD");
     }
-
-    else{
-        printf("BOARD");
-    }
+    printf("BOARD\n");
 
     return 0;
 }

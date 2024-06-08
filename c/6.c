@@ -6,16 +6,18 @@
 #include <stdio.h>
 
 int main() {
-    char c;
+    char ch;
 
-    scanf("%c", &c);
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
 
-    if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u' ){
-        printf("O");
+    
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        printf("O\n");
+    } else { 
+        printf("X\n");
     }
 
-    else{
-        printf("X");
-    }
     return 0;
 }

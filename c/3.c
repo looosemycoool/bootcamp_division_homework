@@ -6,17 +6,16 @@
 #include <stdio.h>
 
 int main() {
-   int i=0;
+   int hour;
 
-   scanf("%d", &i);
+    printf("시간을 입력해주세요 (0-23): ");
+    scanf("%d", &hour);
 
-   if(i<12){
-    printf("AM");
-   }
-
-   else{
-    printf("PM");
-   }
+    if (hour < 12) {
+        printf("AM\n");
+    } else {
+        printf("PM\n");
+    }
 
     return 0;
 }

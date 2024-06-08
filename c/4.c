@@ -6,28 +6,20 @@
 #include <stdio.h>
 
 int main() {
-    int i;
+    int score;
+    
+    scanf("%d", &score);
 
-    scanf("%d", &i);
-
-    if(i>=90 && i<=100){
-        printf("A");
+    if (score >= 90) {
+        printf("A\n");
+    } else if (score >= 80) {
+        printf("B\n");
+    } else if (score >= 70) {
+        printf("C\n");
+    } else if (score >= 60) {
+        printf("D\n");
+    } else {
+        printf("F\n");
     }
-
-    else if(i<90 && i>=80){
-        printf("B");
-    }
-
-    else if(i<80 && i>=70){
-        printf("C");
-    }
-
-    else if(i<70 && i>=60){
-        printf("D");
-    }
-    else{
-        printf("F");
-    }
-
     return 0;
 }

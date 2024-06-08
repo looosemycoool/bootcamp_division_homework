@@ -6,19 +6,16 @@
 #include <stdio.h>
 
 int main() {
-    int age, height;
+     int age, height;
 
-    scanf("%d",&age);
-    scanf("%d",&height);
+    scanf("%d %d", &age, &height);
 
-    if(age>=14 || height>=160){
-        printf("X");
+    if (age >= 14 || height >= 160) {
+        printf("X\n");
+    } else {
+        printf("O\n");
     }
 
-    else
-    {
-        printf("O");
-    }
 
     return 0;
 }

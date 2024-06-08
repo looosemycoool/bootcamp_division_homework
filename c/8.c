@@ -10,14 +10,21 @@ int main() {
 
     scanf("%d", &n);
 
-    for(int i = 1; i <= n; i++) {
-        sum += i; 
-        factorial *= i; 
+    for (int i = 1; i <= n; i++) {
+        sum += i;  
+        factorial *= i;  
+    }
+
+    if (n == 0) {
+        factorial = 1;
     }
 
     printf("%d\n", sum);
     printf("%d", factorial);
-       
+    for (int i = 2; i <= n; i++) {
+        printf(" * %d", i);
+    }
+    printf(")\n");
 
     return 0;
 }
